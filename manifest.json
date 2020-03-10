@@ -1,0 +1,13 @@
+{
+  "name": "Remove Disable Forward Seek",
+  "version": "1.0",
+  "description": "Enables us to forward video tutorial on Upgrad",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://learn.upgrad.com/*", "<all_urls>"],
+      "js": ["remove_disable_forward_seek.js"]
+    }
+  ]
+}
